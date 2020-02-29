@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Apply Deep Learning Model on Webcam Streamed Video</title>
+
+    <!-- Bootstrap & AJAX CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/main.css">
+  </head>
+
+  <body>
+    <!-- Heading Nav Menu (Responsive Design) -->
+    <nav class="navbar navbar-inverse visible-xs">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://jixjia.com">Book of Architecture (Demo)</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="/">
+                <span class="glyphicon glyphicon-eye-open nav-button"></span> Main Application
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body Start -->
+    <div>
+      <!-- Side Menu -->
+      <div class="hidden-xs sidebar">
+        <div class="logo">
+          <a href="http://jixjia.com">
+            <img src="../static/images/boa-logo-wide.png">
+          </a>
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active">
+            <a href="/">
+              <span class="glyphicon glyphicon-eye-open nav-button"></span> Main Application
+            </a>
+          </li>
+        </ul>
+        <!-- Footer -->
+        <footer class="text-center">
+          <p>&copy; Book of Architecture by Jixin Jia</p>
+        </footer>
+      </div>
+
+      <!-- Main -->
+      <div class="main-dish">
+
+        <!-- Heading -->
+        <div class="row">
+          <div class="col-md-7">
+            <div class="well">
+              <h4><strong>Apply Deep Learning Model on Webcam Video Stream</strong></h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Camera Window -->
+        <div class="row">
+          <div class="col-md-7">
+            <div class="well camera-tile"><img src="{{ url_for('video_feed') }}" width="100%" height="100%"></div>
+          </div>
+        </div>
+
+        <!-- End Button -->
+        <div class="row">
+          <div class="col-md-7">
+            <button type="button" class="btn btn-danger btn-lg btn-general"
+              onClick="window.open('about:blank', '_self').close()"><span class="glyphicon glyphicon-new-window"></span>
+              &nbsp;End Program</button>
+          </div>
+        </div>
+
+        <!-- Bottom Placeholder -->
+        <div class="row">
+          <div class="col">
+            &nbsp;
+          </div>
+        </div>
+
+      </div> <!-- Main End -->
+    </div> <!-- Body End -->
+
+    <!-- Footer -->
+    <footer class="visible-xs footer-hidden text-center">
+      <p>&copy; Book of Architecture by Jixin Jia</p>
+    </footer>
+
+  </body>
+
+</html>
