@@ -13,7 +13,7 @@ frame_number = 0
 fps = 0
 
 
-class Camera(object):
+class Face(object):
 
     def __init__(self):
         # Initialise and load our pre-built DNN model

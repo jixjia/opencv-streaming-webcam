@@ -1,7 +1,5 @@
-#!/usr/bin/env python
-
 from flask import Flask, render_template, url_for, Response
-from camera_dnn import Camera
+from model import Face
 
 app = Flask(__name__, static_folder='static')
 
@@ -20,7 +18,7 @@ def livestream(source):
 
 @app.route('/video_feed')
 def video_feed():
-    return Response(livestream(Camera()), mimetype='multipart/x-mixed-replace; boundary=frame')
+    return Response(livestream(Face()), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
 if __name__ == '__main__':
