@@ -20,5 +20,5 @@ This sample program shows how to run your own deep leraning model on a webcam (o
 1. Run python main.py
 1. Open up your browser and navigate to localhost:5000
 
-## Further Details
+## Further Detail
 More details about the solution is available on my [blog](https://jixjia.com/2020/03/01/dnn-live-feed-streaming/)
